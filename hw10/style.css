@@ -1,0 +1,105 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+/* Apply fonts to elements */
+body {
+    font-family: 'Playwrite CU', sans-serif;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    color: darkblue;
+}
+
+p {
+    color: darkslategray;
+}
+
+ul, ol {
+    padding: 5px 30px;
+    border-radius: 4px;
+}
+
+ul {
+    border: 4px solid orange;
+}
+
+ol {
+    border: 2px solid purple;
+}
+
+strong {
+    color: darkred;
+}
+
+em {
+    color: teal;
+}
+
+/* Main layout */
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: lightblue;
+}
+
+aside {
+    padding: 20px;
+    background-color: lightcoral;
+    flex: 1;
+}
+
+section {
+    padding: 20px;
+    background-color: lightgreen;
+    flex: 2;
+}
+
+/* Responsive Layout */
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 640px) {
+    header, main, aside, section {
+        padding: 10px;
+    }
+}
+
+/* Accessibility: Increase text size */
+html {
+    font-size: 16px;
+}
+
+@media (min-width: 640px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 900px) {
+    html {
+        font-size: 20px;
+    }
+}
