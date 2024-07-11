@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+/* form styling */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+#wrapper {
+	width: 60%;
+	margin-left: 4;
+  padding: 20px;
+}
+
+div#formcol1 {
+	float: left;
+	width: 100%;
+}
+
+#formcol1 input.reqfield {
+  background: #ff9;
+}
+
+label {
+text-align: right;
+margin-right: 0.3em;
+width: 7em; /* I made this deliberately wide – come up with your own
+optimal width */
+display: inline-block; /* width will not work for “inline” elements such as
+“label”. Therefore we need to set it to “inline-block” */
+}
+
+#formcol1 li {
+list-style: none;
+}
+	
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+color: #fff !important;
+background-color: #bb3d2f !important;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  color: #333;
+}
+
+/* smaller bring radio buttons closer */
+
+#multchoice p {
+  margin: 5px 0; /* Reduced margin to bring radio buttons closer */
+}
